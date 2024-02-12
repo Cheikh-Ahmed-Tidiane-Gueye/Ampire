@@ -13,7 +13,7 @@
 </head>
 <body>
     <div
-        class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary"
+        class="min-h-screen bg-white selection:bg-green-500/10 selection:text-green-500"
       >
         <header>
           <nav
@@ -24,11 +24,11 @@
               <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                 <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                   <Link
-                    href="#"
+                    to="#"
                     aria-label="logo"
                     class="flex items-center space-x-2"
                   >
-                    <img src="images/ampire.png" alt="Ampire" class="h-9.5 w-auto">
+                    <img src="images/ampire.png" alt="Ampire" class="h-9.5 w-auto" />
                   </Link>
 
                   <button
@@ -59,64 +59,62 @@
                     <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                       <li>
                         <a
-                          href="./pages/solution.html"
-                          class="block transition hover:text-primary md:px-4"
+                          to="./pages/solution.html"
+                          class="block transition hover:text-green-500 md:px-4"
                         >
                           <span>Solution</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="./pages/customers.html"
-                          class="block transition hover:text-primary  md:px-4"
+                          to="./pages/customers.html"
+                          class="block transition hover:text-green-500  md:px-4"
                         >
-                          <span>Customers</span>
+                          <span>Clients</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="./pages/pricing.html"
-                          class="block transition hover:text-primary md:px-4"
+                          to="./pages/pricing.html"
+                          class="block transition hover:text-green-500 md:px-4"
                         >
-                          <span>Pricing</span>
+                          <span>Prix</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="./pages/blog.html"
-                          class="block transition hover:text-primary  md:px-4"
+                          to="./pages/blog.html"
+                          class="block transition hover:text-green-500  md:px-4"
                         >
                           <span>Blog</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="./pages/about.html"
-                          class="block transition hover:text-primary md:px-4"
+                          to="./pages/about.html"
+                          class="block transition hover:text-green-500 md:px-4"
                         >
-                          <span>Company</span>
+                          <span>Entreprise</span>
                         </a>
                       </li>
                     </ul>
                   </div>
 
                   <div class=" ml-auto flex h-9 w-full items-center justify-center before:absolute inset-0 rounded-full bg-primary transition-transform duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:px-4 lgborder lg:border-gray-200 lg:bg-gray-100 mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l">
-                    Get started
+                        Commencer
                   </div>
                   <button
-                    type="button"
                     aria-label="switch theme"
-                    class="blackwhite switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 lg:flex"
+                    class="switcher group relative hidden h-9 w-9 rounded-full absolute inset-0 rounded-full border border-gray-200 bg-gray-50 bg-gradient-to-b transition-transform duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 lg:flex"
                   >
+                    <IoIosMoon />
                   </button>
                 </div>
                 <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
                   <button
-                    type="button"
                     aria-label="switche theme"
                     class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 "
-                  >
-                  </button>
+                  ></button>
                 </div>
               </div>
             </div>
@@ -127,10 +125,16 @@
           <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="relative">
               <h1 class="text-center text-5xl font-bold text-blue-900 sm:text-6xl lg:text-left lg:text-7xl">
-                Design, Build,
+                Conception, Construction,
                 <span class="relative">
-                  <span class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent md:px-2">
-                    <span class="text-[#957fef]">Scale</span>
+                  <svg
+                    class="absolute inset-x-0 -bottom-1 w-full opacity-50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Layer_1"
+                    viewBox="0 0 260 15.6"
+                  ></svg>
+                  <span class="relative bg-gradient-to-r from-green-500 to-secondaryLight bg-clip-text text-transparent md:px-2">
+                    <span class="text-green-500">Expansion</span>
                   </span>
                 </span>
               </h1>
@@ -138,12 +142,13 @@
               <div class="relative items-center gap-12 lg:flex">
                 <div class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
                   <p class="mt-12 text-lg text-gray-600 sm:text-xl">
-                    Computers used to be magical. But much of that magic has
-                    been lost over time, replaced by subpar tools and practices
-                    that slow teams down and hold great work back.
+                    Les ordinateurs étaient autrefois magiques. Mais une grande
+                    partie de cette magie s'est estompée au fil du temps,
+                    remplacée par des outils et des pratiques médiocres qui
+                    ralentissent les équipes et freinent le travail de qualité.
                   </p>
                   <form action="" class="mt-12">
-                    <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 md:p-2 lg:pr-3">
+                    <div class="relative flex items-center rounded-full border border-green-500/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 md:p-2 lg:pr-3">
                       <div class="py-3 pl-4 lg:pl-5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -161,15 +166,15 @@
                         placeholder="Your mail address"
                         class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none"
                         type="email"
-                      >
+                      />
                       <div class="md:pr-1.5 lg:pr-0">
                         <button
                           type="submit"
                           title="Start buying"
-                          class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 sm:w-auto sm:px-6"
+                          class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-green-500 before:transition before:duration-300 active:duration-75 active:before:scale-95 sm:w-auto sm:px-6"
                         >
                           <span class="relative hidden w-max font-semibold text-white md:block">
-                            Get Started
+                            Commencer
                           </span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -185,111 +190,61 @@
                   </form>
                   <div class="mt-12 hidden lg:block">
                     <span class="text-gray-700 ">
-                      From the most talented
+                      La plus talentueuse des
                       <a
-                        href="customers.html"
-                        class="text-primary underline "
+                        to="customers.html"
+                        class="text-green-500 underline "
                       >
-                        Team
+                        Equipe
                       </a>
                       !
                     </span>
                     <div class="relative mt-5 flex -space-x-1 children:h-10 children:w-10 children:rounded-full children:object-cover children:ring-4 children:ring-gray-100 dark:children:ring-gray-900">
                       <img
-                        src="images/avatar.webp"
+                        src="images/avatar.avif"
                         alt="user avatar"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         class="rounded-full border-4 border-gray-100 relative z-[1]"
-                      >
+                      />
                       <img
-                        src="images/avatar-1.webp"
+                        src="images/avatar-1.avif"
                         alt="user avatar"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         class="rounded-full border-4 border-gray-100 relative z-[2] -left-2"
-                      >
+                      />
                       <img
-                        src="images/avatar-2.webp"
+                        src="images/avatar-2.avif"
                         alt="user avatar"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         class="rounded-full border-4 border-gray-100 relative z-[3] -left-4"
-                      >
+                      />
                       <img
-                        src="images/avatar-3.webp"
+                        src="images/avatar-3.avif"
                         alt="user avatar"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         class="rounded-full border-4 border-gray-100 relative z-[4] -left-6"
-                      >
+                      />
                       <img
-                        src="images/avatar-4.webp"
+                        src="images/avatar-4.avif"
                         alt="user avatar"
-                        width="50"
-                        height="50"
+                        width="60"
+                        height="60"
                         class="rounded-full border-4 border-gray-100 relative z-[5] -left-8"
-                      >
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
                   <img
                     class="w-full"
-                    src="images/team.svg"
+                    src="images/team.avif"
                     alt="team illustration"
                     height="600"
                     width="800"
-                  >
-                </div>
-              </div>
-              <div class="mt-12 border-y border-gray-100 py-8 text-center md:py-12 xl:mt-20">
-                <a
-                  href="customers.html"
-                  class="text-sm font-semibold tracking-wider text-gray-800"
-                >
-                  TRUSTED BY YOUR FAVORED TOP TECHS COMPANIES
-                </a>
-                <div class="mt-8 flex flex-wrap justify-center gap-6 brightness-0 contrast-5 grayscale sm:justify-between lg:gap-24">
-                  <img
-                    class="h-8 w-auto lg:h-10 lg:w-auto"
-                    src="images/airbnb.svg"
-                    loading="lazy"
-                    alt="airbnb"
-                    width=""
-                    height=""
-                  >
-                  <img
-                    class="h-8 w-auto lg:h-10 lg:w-auto"
-                    src="images/coty.svg"
-                    loading="lazy"
-                    alt="bissell"
-                    width=""
-                    height=""
-                  >
-                  <img
-                    class="h-8 w-auto lg:h-10 lg:w-auto"
-                    src="images/ge.svg"
-                    loading="lazy"
-                    alt="ge"
-                    width="100"
-                    height="100"
-                  />
-                  <img
-                    class="h-8 w-auto lg:h-10 lg:w-auto"
-                    src="images/lilly.png"
-                    loading="lazy"
-                    alt="lilly"
-                    width=""
-                    height=""
-                  />
-                  <img
-                    class="h-8 w-auto lg:h-10 lg:w-auto"
-                    src="images/microsoft.svg"
-                    loading="lazy"
-                    alt="microsoft"
-                    width=""
-                    height=""
                   />
                 </div>
               </div>
@@ -301,12 +256,13 @@
           <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="text-center">
               <h2 class="text-3xl font-bold text-gray-800 md:text-4xl xl:text-5xl">
-                For growing teams and organizations
+                Pour les équipes et les organisations en pleine croissance
               </h2>
               <p class="mx-auto mt-6 text-gray-700 md:w-3/4 lg:w-3/5">
-                A growing team doesn't need to mean growing pains. Privacy, and
-                the right tool for every step of your journey - Jira Software
-                friction - company size.
+                Une équipe en croissance ne doit pas nécessairement signifier
+                des difficultés croissantes. La confidentialité et l'outil
+                adapté à chaque étape de votre parcours - Jira Software, sans
+                friction - quelle que soit la taille de votre entreprise.
               </p>
 
               <div
@@ -315,8 +271,8 @@
                 class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 sm:w-max"
               >
                 <div
-                  class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500"
-                  style="left: 4px; width: 113.719px;"
+                  class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 "
+                  style="left: 4px; width: 113.719px"
                 ></div>
                 <button
                   type="button"
@@ -325,10 +281,10 @@
                   aria-controls="panel-0"
                   tabIndex="0"
                   title="tab item"
-                  class="tab relative block rounded-full py-2.5 px-4 hover:text-primary"
+                  class="tab relative block rounded-full py-2.5 px-4 hover:text-green-500"
                 >
                   <span class="m-auto block w-max text-sm font-medium tracking-wider">
-                    First Tab
+                    Onglet 1
                   </span>
                 </button>
                 <button
@@ -338,23 +294,22 @@
                   aria-controls="panel-1"
                   tabIndex="-1"
                   title="tab item"
-                  class="tab relative block rounded-full py-2.5 px-4 hover:text-primary"
+                  class="tab relative block rounded-full py-2.5 px-4 hover:text-green-500"
                 >
                   <span class="m-auto block w-max text-sm font-medium tracking-wider">
-                    Second Tab
+                    Onglet 2
                   </span>
                 </button>
                 <button
-                  type="button"
                   role="tab"
                   aria-selected="false"
                   aria-controls="panel-2"
                   tabIndex="-1"
                   title="tab item"
-                  class="tab relative block rounded-full py-2.5 px-4 hover:text-primary"
+                  class="tab relative block rounded-full py-2.5 px-6 hover:text-green-500"
                 >
                   <span class="m-auto block w-max text-sm font-medium tracking-wider">
-                    Third Tab
+                    Onglet 3
                   </span>
                 </button>
               </div>
@@ -368,34 +323,33 @@
                   >
                     <div>
                       <h3 class="text-2xl font-bold text-gray-900 ">
-                        Make work flow across teams while connecting back to
-                        company goals
+                        Faire circuler le travail à travers les équipes tout en
+                        le reliant aux objectifs de l'entreprise.
                       </h3>
                       <p class="mt-8 text-gray-600">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Eum omnis voluptatem accusantium nemo perspiciatis
-                        delectus atque autem! repellat expedita consequatur!
-                        Officiis id consequatur atque doloremque!
+                        Optimisez la collaboration inter-équipes en
+                        synchronisant votre flux de travail avec les objectifs
+                        stratégiques de votre entreprise, garantissant ainsi une
+                        progression fluide et alignée vers le succès.
                       </p>
                       <div class="mt-12 space-y-6">
                         <div class="flex items-center gap-6">
                           <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4">
                             <img
-                              class="m-auto h-8 w-auto"
-                              src="images/4727266.png"
+                              class="m-auto h-18 w-20"
+                              src="images/unis.avif"
                               alt="icon illustration"
                               loading="lazy"
-                              width="512"
-                              height="512"
                             />
                           </div>
                           <div class="w-[calc(100%-7.5rem)]">
                             <h4 class="text-lg font-semibold text-gray-800 ">
-                              Together as one
+                              Unis tous ensemble
                             </h4>
                             <p class="mt-1 text-gray-600">
-                              Accusantium nemo perspiciatis delectus atque
-                              autem!
+                              Unis tous ensemble pour atteindre de nouveaux
+                              sommets, ensemble nous formons une équipe solide
+                              prête à relever tous les défis.!
                             </p>
                           </div>
                         </div>
@@ -403,8 +357,8 @@
                         <div class="flex items-center gap-6">
                           <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4">
                             <img
-                              class="m-auto h-8 w-auto"
-                              src="images/584796.png"
+                              class="m-auto h-18 w-20 rounded-full"
+                              src="images/idee.avif"
                               alt="icon illustration"
                               loading="lazy"
                               width="512"
@@ -413,11 +367,13 @@
                           </div>
                           <div class="w-[calc(100%-7.5rem)]">
                             <h4 class="text-lg font-semibold text-gray-800 ">
-                              New ideas
+                              Nouveaux idées
                             </h4>
                             <p class="mt-1 text-gray-600">
-                              Accusalectus atque autem accusantium nemo
-                              perspiciatis delectus atque autem!
+                              Explorez de nouvelles idées et libérez votre
+                              créativité avec notre plateforme innovante, où
+                              chaque concept devient une opportunité de
+                              transformation.
                             </p>
                           </div>
                         </div>
@@ -430,22 +386,22 @@
                   >
                     <div>
                       <h3 class="text-2xl font-bold text-gray-900 md:text-3xl lg:text-[30px]">
-                        Make work flow across teams while connecting back to
-                        company goals
+                        Facilitez la circulation du travail entre les équipes
+                        tout en les connectant aux objectifs de l'entreprise
                       </h3>
 
                       <p class="mt-8 text-gray-600">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Eum omnis voluptatem accusantium nemo perspiciatis
-                        delectus atque autem! repellat expedita consequatur!
-                        Officiis id consequatur atque doloremque!
+                        Transformez la façon dont votre entreprise fonctionne en
+                        facilitant la circulation harmonieuse du travail entre
+                        les équipes, tout en les connectant de manière
+                        transparente aux objectifs stratégiques de l'entreprise.
                       </p>
                       <div class="mt-12 space-y-6">
                         <div class="flex items-center gap-6">
                           <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4">
                             <img
                               class="m-auto h-8 w-auto"
-                              src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png"
+                              src=""
                               alt="icon illustration"
                               loading="lazy"
                               width="512"
@@ -558,7 +514,7 @@
                         class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10"
                       >
                         <img
-                          src="images/tailus-home.webp"
+                          src="images/tailus-home.avif"
                           class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl sm:h-[28rem]"
                           alt="tailus screenshot"
                           width="850"
@@ -603,7 +559,7 @@
               <div class="md:5/12 lg:w-6/12">
                 <img
                   class="md:-ml-8"
-                  src="images/cta-cards.webp"
+                  src="images/cta-cards.avif"
                   alt="tailus stats and login components"
                   loading="lazy"
                   width="1779"
@@ -612,25 +568,30 @@
               </div>
               <div class="md:7/12 lg:w-6/12">
                 <h2 class="text-3xl font-bold text-gray-800 md:text-4xl xl:text-5xl">
-                  Development is carried out by passionate developers
+                  Le développement est réalisé par des passionnés.
                 </h2>
                 <p class="mt-8 text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  omnis voluptatem accusantium nemo perspiciatis delectus atque
-                  autem! repellat expedita consequatur! Officiis id consequatur
-                  atque doloremque!
+                  Facilitez la circulation harmonieuse du travail au sein de
+                  votre organisation, permettant ainsi à chaque équipe de
+                  s'aligner efficacement sur les objectifs stratégiques de
+                  l'entreprise. Avec notre solution intégrée, vos équipes
+                  peuvent collaborer de manière transparente, partageant des
+                  idées et des ressources de manière fluide, tout en restant
+                  toujours ancrées dans la vision et les objectifs globaux de
+                  l'entreprise.
                 </p>
                 <p class="mb-12 mt-4 text-gray-600">
-                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                  iure expedita at? Asperiores nemo possimus nesciunt dicta
-                  veniam aspernatur quam mollitia.
+                  En unissant les efforts de chaque département, nous
+                  transformons les défis en opportunités et favorisons une
+                  croissance durable, car ensemble, nous atteignons de nouveaux
+                  sommets.
                 </p>
                 <a
-                  href="./pages/contact.html"
-                  class="relative flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95"
+                  to="./pages/contact.html"
+                  class="relative flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-green-500 before:transition-transform before:duration-300 active:duration-75 active:before:scale-95"
                 >
                   <span class="relative text-base font-semibold text-white">
-                    Get started
+                    Commencer
                   </span>
                 </a>
               </div>
@@ -643,18 +604,19 @@
             aria-hidden="true"
             class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50"
           >
-            <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px]"></div>
+            <div class="h-60 bg-gradient-to-br from-green-500 to-purple-400 blur-[106px]"></div>
             <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px]"></div>
           </div>
           <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="text-center">
               <h2 class="text-3xl font-bold text-gray-800 md:text-4xl xl:text-5xl">
-                A technology-first approach
+                Une approche axée sur la technologie
               </h2>
               <p class="mx-auto mt-6 text-gray-700 md:w-3/4 lg:w-3/5">
-                A growing team doesn't need to mean growing pains. Privacy, and
-                the right tool for every step of your journey - Jira Software
-                friction - company size.
+                Une équipe en pleine expansion n'implique pas nécessairement des
+                difficultés croissantes. Avec Jira Software, trouvez la
+                confidentialité et l'outil adéquat à chaque étape de votre
+                progression, quel que soit la taille de votre entreprise.
               </p>
             </div>
             <div class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
@@ -669,17 +631,22 @@
                   />
                   <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-gray-800 transition">
-                      First feature
+                      Première fonctionnalité
                     </h3>
                     <p class="text-gray-600">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Saepe nesciunt neque culpa hic illum ab qui error
-                      repellendus asperiores unde ut ipsam perferendis nemo fuga
-                      cum, eum consectetur, magnam doloremque!
+                      Découvrez notre première fonctionnalité révolutionnaire
+                      conçue pour catalyser l'efficacité de votre équipe, tout
+                      en alignant chaque tâche et projet avec les objectifs
+                      stratégiques de votre entreprise. Grâce à cette innovation
+                      remarquable, vous pourrez non seulement améliorer la
+                      collaboration interne, mais également renforcer la
+                      cohésion et la synergie entre les différentes équipes,
+                      permettant ainsi à votre entreprise de prospérer et de
+                      réaliser son plein potentiel.
                     </p>
                     <a
                       aria-label="read more"
-                      href="#"
+                      to="#"
                       class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                     >
                       <svg
@@ -709,17 +676,22 @@
                   />
                   <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-gray-800 transition">
-                      Second feature
+                      Seconde fonctionnalité
                     </h3>
                     <p class="text-gray-600">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Saepe nesciunt neque culpa hic illum ab qui error
-                      repellendus asperiores unde ut ipsam perferendis nemo fuga
-                      cum, eum consectetur, magnam doloremque!
+                      Découvrez notre seconde fonctionnalité révolutionnaire
+                      conçue pour catalyser l'efficacité de votre équipe, tout
+                      en alignant chaque tâche et projet avec les objectifs
+                      stratégiques de votre entreprise. Grâce à cette innovation
+                      remarquable, vous pourrez non seulement améliorer la
+                      collaboration interne, mais également renforcer la
+                      cohésion et la synergie entre les différentes équipes,
+                      permettant ainsi à votre entreprise de prospérer et de
+                      réaliser son plein potentiel.
                     </p>
                     <a
                       aria-label="read more"
-                      href="#"
+                      to="#"
                       class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                     >
                       <svg
@@ -749,17 +721,22 @@
                   />
                   <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-gray-800 transition">
-                      Third feature
+                      Troisième fonctionnalité
                     </h3>
                     <p class="text-gray-600">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Saepe nesciunt neque culpa hic illum ab qui error
-                      repellendus asperiores unde ut ipsam perferendis nemo fuga
-                      cum, eum consectetur, magnam doloremque!
+                      Découvrez notre troisième fonctionnalité révolutionnaire
+                      conçue pour catalyser l'efficacité de votre équipe, tout
+                      en alignant chaque tâche et projet avec les objectifs
+                      stratégiques de votre entreprise. Grâce à cette innovation
+                      remarquable, vous pourrez non seulement améliorer la
+                      collaboration interne, mais également renforcer la
+                      cohésion et la synergie entre les différentes équipes,
+                      permettant ainsi à votre entreprise de prospérer et de
+                      réaliser son plein potentiel.
                     </p>
                     <a
                       aria-label="read more"
-                      href="#"
+                      to="#"
                       class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
                     >
                       <svg
@@ -786,118 +763,15 @@
           <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="text-center">
               <h2 class="text-3xl font-bold text-gray-800 md:text-4xl xl:text-5xl">
-                Trusted by leaders
+                Faites confiance aux leaders.
               </h2>
               <p class="mx-auto mt-6 text-gray-700 md:w-3/4 lg:w-3/5">
-                A growing team doesn't need to mean growing pains. Privacy, and
-                the right tool for every step of your journey - Jira Software
-                friction - company size.
+                Une équipe en pleine croissance n'implique pas nécessairement
+                des douleurs de croissance. Avec Jira Software, nous mettons
+                l'accent sur la confidentialité et vous fournissons l'outil
+                adéquat à chaque étape de votre parcours, sans accroc, quelle
+                que soit la taille de votre entreprise.
               </p>
-            </div>
-            <div class="mt-12 grid gap-8 md:grid-cols-2">
-              <div class="rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
-                <div class="flex h-full flex-col justify-center space-y-6 md:space-y-8">
-                  <img
-                    class="mr-auto h-12 w-auto"
-                    src="images/microsoft.svg"
-                    loading="lazy"
-                    alt="microsoft"
-                  />
-                  <p class="text-gray-600 md:text-lg lg:text-xl">
-                    <span class="font-serif">"</span> Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Quaerat repellat
-                    perspiciatis excepturi est. Non ipsum iusto aliquam
-                    consequatur repellat provident, omnis ut, sapiente
-                    voluptates veritatis cum deleniti repudiandae ad doloribus.{" "}
-                    <br />
-                    <br />
-                    Esse, sint sit aut ducimus ea ipsam velit saepe earum
-                    dolorem, dignissimos minima voluptate quo accusamus
-                    corporis, quaerat beatae aliquid. Impedit, accusamus.{" "}
-                    <span class="font-serif">"</span>
-                  </p>
-                  <div class="flex items-center gap-3">
-                    <img
-                      class="h-12 w-12 rounded-full"
-                      src="images/avatar-2.webp"
-                      loading="lazy"
-                      alt="user avatar"
-                      width="200"
-                      height="200"
-                    />
-                    <div>
-                      <h3 class="text-lg font-semibold leading-none text-gray-600">
-                        Andy Doe
-                      </h3>
-                      <span class="text-sm text-gray-500">
-                        Product Designer
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10">
-                <img
-                  class="h-12 w-auto"
-                  src="images/airbnb.svg"
-                  loading="lazy"
-                  alt="airbnb"
-                  width=""
-                  height=""
-                />
-                <p class="text-gray-600">
-                  <span class="font-serif">"</span>Sit amet consectetur
-                  adipisicing elit. Quaerat repellat perspiciatis excepturi est.
-                  Provident, omnis ut, sapiente veritatis cum deleniti
-                  repudiandae ad doloribus.{" "}
-                  <span class="font-serif">"</span>
-                </p>
-                <div class="flex items-center gap-3 text-left">
-                  <img
-                    class="h-12 w-12 rounded-full"
-                    src="images/avatar-3.webp"
-                    alt="user avatar"
-                    width="200"
-                    height="200"
-                    loading="lazy"
-                  />
-                  <div>
-                    <h3 class="text-lg font-semibold leading-none text-gray-600">
-                      Janet Doe
-                    </h3>
-                    <span class="text-sm text-gray-500">UX Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10">
-                <img class="h-12 w-auto" src="images/ge.svg" loading="lazy" alt="ge" />
-                <p class="text-gray-600">
-                  <span class="font-serif">"</span>Sit amet consectetur
-                  adipisicing elit. Quaerat repellat perspiciatis excepturi est.
-                  Provident, omnis ut, sapiente veritatis cum deleniti
-                  repudiandae ad doloribus.{" "}
-                  <span class="font-serif">"</span>
-                </p>
-                <div class="flex items-center gap-3 text-left">
-                  <img
-                    class="h-12 w-12 rounded-full"
-                    src="images/avatar-4.webp"
-                    alt="user avatar"
-                    width="200"
-                    height="200"
-                    loading="lazy"
-                  />
-                  <div>
-                    <h3 class="text-lg font-semibold leading-none text-gray-600">
-                      John Doe
-                    </h3>
-                    <span class="text-sm text-gray-500">
-                      Product Designer
-                    </span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -909,16 +783,17 @@
                 <div class="h-max py-16 md:w-6/12 xl:w-5/12">
                   <div class="text-center md:text-left">
                     <h2 class="text-3xl font-bold text-gray-800 md:w-max md:text-4xl xl:text-5xl">
-                      One step to improve <br />
-                      your workflow
+                      Un pas de plus vers <br />
+                      l'amelioration workflow
                     </h2>
                     <p class="mb-8 mt-6 text-gray-600">
-                      Praesentium, atque exercitationem dolorum, iste libero
-                      eaque animi illum magnam velit iusto quidem omnis quas! Ad
-                      expedita quaerat.
+                      notre solution innovante vous offre la possibilité de
+                      coordonner efficacement les activités de vos équipes tout
+                      en alignant chaque étape sur les objectifs stratégiques de
+                      votre entreprise.
                     </p>
                     <form action="" class="mt-12">
-                      <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md md:p-2 lg:pr-3">
+                      <div class="relative flex items-center rounded-full border border-green-500/20 bg-white p-1 px-2 shadow-md md:p-2 lg:pr-3">
                         <div class="py-3 pl-4 lg:pl-5">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -941,10 +816,10 @@
                           <button
                             type="button"
                             title="Start buying"
-                            class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95  sm:w-auto sm:px-6"
+                            class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-green-500 before:transition before:duration-300 active:duration-75 active:before:scale-95  sm:w-auto sm:px-6"
                           >
                             <span class="relative hidden w-max font-semibold text-white md:block">
-                              Get Started
+                              Commencer
                             </span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -963,7 +838,7 @@
 
                 <div class="md:w-[42%] lg:w-1/2">
                   <img
-                    src="images/cta-cards.webp"
+                    src="images/cta-cards.avif"
                     alt="tailus stat cards components"
                     loading="lazy"
                     width="1299"
@@ -983,7 +858,7 @@
                   <div class="flex h-full items-center justify-between gap-6 border-b border-white py-6 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
                     <div>
                       <Link
-                        href="#"
+                        to="#"
                         aria-label="ampire logo"
                         class="flex items-center"
                       >
@@ -994,39 +869,39 @@
                         />
                       </Link>
                       <Link
-                        href="#"
+                        to="https://tailus.io"
                         class="mt-2 inline-block text-sm"
                       >
-                        Designed by Stagiaire RED TEAM
+                        Designed <span class="text-red-500">Red Team</span> (stagiaire)
                       </Link>
                     </div>
 
                     <div class="flex gap-6">
                       <Link
-                        href="#"
+                        to="#"
                         target="blank"
                         aria-label="github"
-                        class="hover:text-primary"
+                        class="hover:text-green-500"
                       >
                         <span class="sr-only">Github</span>
                         <FaGithub />
                       </Link>
                       <Link
-                        href="#"
+                        to="#"
                         target="blank"
                         aria-label="twitter"
-                        class="hover:text-primary"
+                        class="hover:text-green-500"
                       >
                         <FaTwitter />
                       </Link>
                       <Link
-                        href="#"
+                        to="#"
                         target="blank"
                         aria-label="medium"
-                        class="hover:text-primary"
+                        class="hover:text-green-500"
                       >
                         <span class="sr-only">Medium</span>
-                        <FaMedium s/>
+                        <FaMedium s />
                       </Link>
                     </div>
                   </div>
@@ -1035,45 +910,45 @@
                   <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-cols-3 md:pl-16">
                     <div>
                       <h2 class="text-base font-medium text-gray-800">
-                        Company
+                        Entreprise
                       </h2>
                       <ul class="mt-4 list-inside space-y-4">
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
-                            About
+                            A propos
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
-                            Customers
+                            Clients
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Enterprise
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Partners
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Jobs
                           </a>
@@ -1087,40 +962,40 @@
                       <ul class="mt-4 list-inside space-y-4">
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             About
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Customers
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Enterprise
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Partners
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Jobs
                           </a>
@@ -1134,40 +1009,40 @@
                       <ul class="mt-4 list-inside space-y-4">
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             About
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Customers
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Enterprise
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Partners
                           </a>
                         </li>
                         <li>
                           <a
-                            href="#"
-                            class="text-sm duration-100 hover:text-primary"
+                            to="#"
+                            class="text-sm duration-100 hover:text-green-500"
                           >
                             Jobs
                           </a>
@@ -1176,7 +1051,7 @@
                     </div>
                   </div>
                   <div class="flex justify-between text-sm md:pl-16">
-                    <span>© HubForge 2024 - Present</span>
+                    <span>© Red Team 2024 - Present</span>
                     <span>All right reserved</span>
                   </div>
                 </div>
